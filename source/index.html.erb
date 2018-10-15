@@ -4,18 +4,16 @@ title: Le Wagon - Middleman
 
 <%= partial "partial/banner" %>
 <div class="wrapper">
-<h2 class="text-center"> Recent flats </h2>
+<h1 class="text-center"> Recent flats </h1>
 <div class="container">
   <div class="row">
+    <% data.users.each do |element| %>
+
     <div class="col-xs-12 col-sm-4">
-      <%= partial "partial/card" %>
+      <%= partial "partial/card", locals: {name: element[:name], city: element[:city], username: element[:username]} %>
     </div>
-    <div class="col-xs-12 col-sm-4">
-      <%= partial "partial/card" %>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <%= partial "partial/card" %>
-    </div>
+    <% end %>
+
   </div>
 </div>
 </div>

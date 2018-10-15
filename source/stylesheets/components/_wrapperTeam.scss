@@ -1,0 +1,14 @@
+.wrapperTeam {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(0deg, white 50%, $off-white 50%);
+  img {
+    height: 200px;
+    width: 200px;
+  }
+  i {
+    color: $heartred;
+  }
+}

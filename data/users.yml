@@ -1,4 +1,9 @@
-- name: 'Sébastien Saunier'
-  github_nickname: 'ssaunier'
-- name: 'Boris Paillard'
-  github_nickname: 'Papillard'
+- city: Berlin
+  name: Seb
+  username: Ssaunier
+- city: Shanghai
+  name: Boris
+  username: Papillard
+- city: Rio
+  name: Tim
+  username: tgenaitay
