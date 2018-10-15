@@ -1,0 +1,40 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('https://kitt.lewagon.com/placeholder/cities/london'); height: 50vh; background-position: center;">
+</div>
+<div class="content wrapperFlats">
+  <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle text-center" %>
+  <div class="flat-content">
+    <h3><%= flat.description %></h3>
+    <p><%= flat.name %></p>
+    <p><%= flat.city_name %></p>
+    <p> <% flat.rating.to_i.times do %>
+      <i class="fas fa-star"></i>
+      <% end %>
+    </p>
+  </div>
+  <div class="flat-form">
+    <form>
+      <h3>Book this flat</h3>
+      <div class="form-group">
+        <div class="form-group">
+          <input type="text" class="form-control" id="checkin" placeholder="Check-in date">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="checkout" placeholder="Check-out date">
+        </div>
+        <select class="form-control">
+          <option value="1">1 guest</option>
+          <option value="2">2 guests</option>
+          <option value="3">3 guests</option>
+        </select>
+        <button type="submit" class="btn btn-primary btn-blue indent">Submit</button>
+      </form>
+    </div>
+
+  </div>
+</div>

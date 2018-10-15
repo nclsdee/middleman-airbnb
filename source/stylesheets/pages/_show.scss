@@ -1,0 +1,26 @@
+#flats {
+  font-size: 18px;
+}
+
+.wrapperFlats {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  img {
+    height: 150px;
+    width: 150px;
+    margin: 50px;
+  }
+}
+
+.flat-form {
+  height: 200px;
+  width: 200px;
+  margin: 80px;
+}
+
+.indent {
+  margin: 12px 50px;
+}
